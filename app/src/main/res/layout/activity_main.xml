@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sai.myroom.MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="91dp"
+        android:background="@color/colorPrimary"
+        android:elevation="1dp"
+        android:onClick="studentMode"
+        android:text="Student"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="227dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:onClick="adminMode"
+        android:text="ADMINISTRATOR"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="360dp" />
+</android.support.constraint.ConstraintLayout>
