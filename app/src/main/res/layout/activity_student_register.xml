@@ -13,35 +13,35 @@
         tools:layout_editor_absoluteY="8dp">
 
         <EditText
-            android:id="@+id/editText12"
+            android:id="@+id/studentPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/button5"
+            android:layout_alignEnd="@+id/button5"
+            android:layout_alignRight="@+id/button5"
+            android:layout_marginBottom="11dp"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
             tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="371dp"
-            android:layout_above="@+id/button5"
-            android:layout_alignRight="@+id/button5"
-            android:layout_alignEnd="@+id/button5"
-            android:layout_marginBottom="11dp" />
+            tools:layout_editor_absoluteY="371dp" />
 
         <EditText
-            android:id="@+id/editText11"
+            android:id="@+id/emailID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/blockNumber"
+            android:layout_alignStart="@+id/blockNumber"
+            android:layout_below="@+id/blockNumber"
+            android:layout_marginTop="22dp"
             android:ems="10"
             android:hint="Email ID"
             android:inputType="textEmailAddress"
             tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="313dp"
-            android:layout_below="@+id/editText9"
-            android:layout_alignLeft="@+id/editText9"
-            android:layout_alignStart="@+id/editText9"
-            android:layout_marginTop="22dp" />
+            tools:layout_editor_absoluteY="313dp" />
 
         <EditText
-            android:id="@+id/editText9"
+            android:id="@+id/blockNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -49,13 +49,13 @@
             android:inputType="number"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="257dp"
-            android:layout_below="@+id/editText7"
-            android:layout_alignLeft="@+id/editText7"
-            android:layout_alignStart="@+id/editText7"
+            android:layout_below="@+id/roomNo"
+            android:layout_alignLeft="@+id/roomNo"
+            android:layout_alignStart="@+id/roomNo"
             android:layout_marginTop="14dp" />
 
         <EditText
-            android:id="@+id/editText7"
+            android:id="@+id/roomNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -63,13 +63,13 @@
             android:inputType="number"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="195dp"
-            android:layout_below="@+id/editText6"
-            android:layout_alignLeft="@+id/editText6"
-            android:layout_alignStart="@+id/editText6"
+            android:layout_below="@+id/regNo"
+            android:layout_alignLeft="@+id/regNo"
+            android:layout_alignStart="@+id/regNo"
             android:layout_marginTop="20dp" />
 
         <EditText
-            android:id="@+id/editText6"
+            android:id="@+id/regNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -77,9 +77,9 @@
             android:inputType="number"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="135dp"
-            android:layout_below="@+id/editText3"
-            android:layout_alignLeft="@+id/editText3"
-            android:layout_alignStart="@+id/editText3"
+            android:layout_below="@+id/name"
+            android:layout_alignLeft="@+id/name"
+            android:layout_alignStart="@+id/name"
             android:layout_marginTop="16dp" />
 
         <TextView
@@ -97,7 +97,7 @@
             android:layout_marginTop="18dp" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
