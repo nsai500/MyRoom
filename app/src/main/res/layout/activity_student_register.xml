@@ -6,86 +6,124 @@
     android:layout_height="match_parent"
     tools:context="sai.myroom.studentRegister">
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="40sp"
-        android:background="@color/colorPrimary"
-        android:onClick="register"
-        android:text="Register"
-        android:textColor="@android:color/background_light"
-        android:textColorHighlight="@android:color/background_dark"
-        tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="455dp" />
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="500dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
 
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Name"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="71dp" />
+        <EditText
+            android:id="@+id/editText12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="371dp"
+            android:layout_above="@+id/button5"
+            android:layout_alignRight="@+id/button5"
+            android:layout_alignEnd="@+id/button5"
+            android:layout_marginBottom="11dp" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Student Registration"
-        android:textColor="@color/colorPrimary"
-        android:textSize="20dp"
-        android:typeface="monospace"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="16dp" />
+        <EditText
+            android:id="@+id/editText11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="313dp"
+            android:layout_below="@+id/editText9"
+            android:layout_alignLeft="@+id/editText9"
+            android:layout_alignStart="@+id/editText9"
+            android:layout_marginTop="22dp" />
 
-    <EditText
-        android:id="@+id/editText6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Registration Number"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="135dp" />
+        <EditText
+            android:id="@+id/editText9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Block Number"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="257dp"
+            android:layout_below="@+id/editText7"
+            android:layout_alignLeft="@+id/editText7"
+            android:layout_alignStart="@+id/editText7"
+            android:layout_marginTop="14dp" />
 
-    <EditText
-        android:id="@+id/editText7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Room Number"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="195dp" />
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Room Number"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="195dp"
+            android:layout_below="@+id/editText6"
+            android:layout_alignLeft="@+id/editText6"
+            android:layout_alignStart="@+id/editText6"
+            android:layout_marginTop="20dp" />
 
-    <EditText
-        android:id="@+id/editText9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Block Number"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="257dp" />
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Registration Number"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="135dp"
+            android:layout_below="@+id/editText3"
+            android:layout_alignLeft="@+id/editText3"
+            android:layout_alignStart="@+id/editText3"
+            android:layout_marginTop="16dp" />
 
-    <EditText
-        android:id="@+id/editText11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Email ID"
-        android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="313dp" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Registration"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:typeface="monospace"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp" />
 
-    <EditText
-        android:id="@+id/editText12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="371dp" />
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="71dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/button5"
+            android:layout_alignEnd="@+id/button5"
+            android:layout_marginTop="68dp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            android:onClick="register"
+            android:text="Register"
+            android:textColor="@android:color/background_light"
+            android:textColorHighlight="@android:color/background_dark"
+            tools:layout_editor_absoluteX="136dp"
+            tools:layout_editor_absoluteY="421dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="28dp" />
+    </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>

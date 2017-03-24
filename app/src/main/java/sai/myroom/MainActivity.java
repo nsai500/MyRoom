@@ -1,5 +1,6 @@
 package sai.myroom;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +20,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void studentMode(View view){
 
+        Intent i = new Intent(getApplicationContext(),studentLoginActivity.class);
+
+        startActivity(i);
+
     }
 
     /**
@@ -27,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void adminMode(View view){
+
+        Intent i2 = new Intent(getApplicationContext(),adminLoginActivity.class);
+
+        startActivity(i2);
 
     }
 }

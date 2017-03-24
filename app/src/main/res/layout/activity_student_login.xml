@@ -6,55 +6,79 @@
     android:layout_height="match_parent"
     tools:context="sai.myroom.studentLoginActivity">
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:onClick="loginCheck"
-        android:text="Login"
-        android:textColor="@android:color/background_light"
-        android:textColorHighlight="@android:color/background_dark"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="254dp" />
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="500dp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="16dp">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="studentRegister"
-        android:text="Register Here!"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="328dp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Login"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="137dp"
+            tools:layout_editor_absoluteY="282dp"
+            android:layout_marginTop="29dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
 
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Email ID"
-        android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="126dp" />
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="194dp"
+            android:layout_below="@+id/editText4"
+            android:layout_alignLeft="@+id/editText4"
+            android:layout_alignStart="@+id/editText4"
+            android:layout_marginTop="29dp" />
 
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="194dp" />
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="126dp"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="82dp" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Student Login"
-        android:textColor="@color/colorPrimary"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="54dp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="studentRegister"
+            android:text="Register Here!"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="328dp"
+            android:layout_below="@+id/button4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:onClick="loginCheck"
+            android:text="Login"
+            android:textColor="@android:color/background_light"
+            android:textColorHighlight="@android:color/background_dark"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="254dp"
+            android:layout_below="@+id/editText5"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginTop="35dp" />
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
