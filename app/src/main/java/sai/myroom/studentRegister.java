@@ -1,5 +1,6 @@
 package sai.myroom;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
@@ -79,7 +80,7 @@ public class studentRegister extends AppCompatActivity {
 
             c.moveToFirst();
 
-            while (c != null) {
+            while (!c.isAfterLast()) {
 
                 Log.i("Name",c.getString(nameIndex));
                 Log.i("Registration Number",c.getString(regIndex));
@@ -89,7 +90,16 @@ public class studentRegister extends AppCompatActivity {
 
             }
 
-        }catch (Exception e){
+            c.close();
+
+            Intent i5 = new Intent(getApplicationContext(),studentActivity.class);
+
+            Toast.makeText(getApplicationContext(),"Registered Successfully!",Toast.LENGTH_LONG).show();
+
+            startActivity(i5);
+
+        }
+        catch(Exception e){
 
             Toast.makeText(getApplicationContext(),"Exception Occured",Toast.LENGTH_SHORT).show();
 

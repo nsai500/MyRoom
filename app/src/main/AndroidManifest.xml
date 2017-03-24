@@ -23,7 +23,11 @@
         </activity>
         <activity android:name=".studentLoginActivity" />
         <activity android:name=".adminLoginActivity" />
-        <activity android:name=".studentRegister"></activity>
+        <activity android:name=".studentRegister" />
+        <activity
+            android:name=".studentActivity"
+            android:label="@string/title_activity_student"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
