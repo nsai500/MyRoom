@@ -28,6 +28,15 @@
             android:name=".studentActivity"
             android:label="@string/title_activity_student"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".requestActivity"
+            android:label="@string/title_activity_request"
+            android:parentActivityName=".studentActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sai.myroom.studentActivity" />
+        </activity>
     </application>
 
 </manifest>

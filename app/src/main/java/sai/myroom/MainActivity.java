@@ -38,4 +38,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i2);
 
     }
+
+    public void shortcut(View view){
+
+        Intent test = new Intent(getApplicationContext(),requestActivity.class);
+
+        startActivity(test);
+
+    }
 }

@@ -15,4 +15,5 @@
         completions."
     </string>
     <string name="title_activity_student">Student Page</string>
+    <string name="title_activity_request">requestActivity</string>
 </resources>
