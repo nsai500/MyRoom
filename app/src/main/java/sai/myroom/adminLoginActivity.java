@@ -28,8 +28,6 @@ public class adminLoginActivity extends AppCompatActivity {
 
         String adminPasswordd = adminPassword.getText().toString();
 
-        String fnvn= "";
-
     }
 
 }
