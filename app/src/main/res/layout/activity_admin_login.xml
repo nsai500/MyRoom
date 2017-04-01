@@ -6,66 +6,76 @@
     android:layout_height="match_parent"
     tools:context="sai.myroom.adminLoginActivity">
 
-    <RelativeLayout
-        android:layout_width="370dp"
-        android:layout_height="500dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:onClick="adminLoginCheck"
+        android:text="Login"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_dark"
+        app:layout_constraintTop_toTopOf="@+id/adminPassword"
+        android:layout_marginTop="67dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.0" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Administrator Login"
-            android:textColor="@color/colorPrimary"
-            android:textSize="20sp"
-            tools:layout_editor_absoluteX="94dp"
-            tools:layout_editor_absoluteY="56dp"
-            android:layout_above="@+id/editText"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="46dp" />
+    <EditText
+        android:id="@+id/adminID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Admin ID"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        android:layout_marginTop="77dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.503" />
 
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword"
-            tools:layout_editor_absoluteX="85dp"
-            tools:layout_editor_absoluteY="194dp"
-            android:layout_above="@+id/button3"
-            android:layout_alignLeft="@+id/editText"
-            android:layout_alignStart="@+id/editText"
-            android:layout_marginBottom="27dp" />
+    <EditText
+        android:id="@+id/adminPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_alignLeft="@+id/adminID"
+        android:layout_alignStart="@+id/adminID"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toTopOf="@+id/adminID"
+        android:layout_marginTop="63dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.503" />
 
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Admin ID"
-            android:inputType="textEmailAddress"
-            tools:layout_editor_absoluteX="85dp"
-            tools:layout_editor_absoluteY="126dp"
-            android:layout_above="@+id/button3"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="96dp" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:onClick="adminLoginCheck"
-            android:text="Login"
-            android:textColor="@android:color/background_light"
-            android:textColorHighlight="@android:color/background_dark"
-            tools:layout_editor_absoluteX="148dp"
-            tools:layout_editor_absoluteY="254dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="190dp" />
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adminID"
+        android:layout_centerHorizontal="true"
+        android:text="Administrator Login"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="49dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
