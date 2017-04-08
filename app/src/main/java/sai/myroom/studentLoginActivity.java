@@ -45,6 +45,8 @@ public class studentLoginActivity extends AppCompatActivity {
 
                 c.moveToFirst();
 
+                Log.i("cjebjvrb","vjrbvjrbf");
+
                 while (!c.isAfterLast()) {
 
                     /*Log.i("emailID",c.getString(emailIDIndex));
