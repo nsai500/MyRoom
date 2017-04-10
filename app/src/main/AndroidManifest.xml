@@ -37,6 +37,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="sai.myroom.studentActivity" />
         </activity>
+        <activity android:name=".adminActivity" />
+        <activity
+            android:name=".reviewRequest"
+            android:label="@string/title_activity_review_request"
+            android:parentActivityName=".adminActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sai.myroom.adminActivity" />
+        </activity>
     </application>
 
 </manifest>

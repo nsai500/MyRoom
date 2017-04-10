@@ -16,7 +16,7 @@ public class studentLoginActivity extends AppCompatActivity {
 
     EditText passwordText;
 
-    boolean loginFlag;
+    boolean loginFlag=false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,8 +59,6 @@ public class studentLoginActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(),"Login Successful!",Toast.LENGTH_LONG).show();
 
                         i10.putExtra("emailID", emailID);
-
-                        i10.putExtra("password", password);
 
                         loginFlag=true;
 

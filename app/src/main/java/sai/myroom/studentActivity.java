@@ -18,6 +18,10 @@ public class studentActivity extends AppCompatActivity {
 
     ArrayAdapter arrayAdapter;
 
+    String emailID;
+
+    String password;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,12 +29,10 @@ public class studentActivity extends AppCompatActivity {
 
         Intent i = getIntent();
 
-        String emailID = i.getStringExtra("emailID");
+        emailID = i.getStringExtra("emailID");
 
-        String password = i.getStringExtra("password");
-
-        Log.i("emailID",emailID);
-        Log.i("password",password);
+        //Log.i("emailID",emailID);
+        //Log.i("password",password);
 
         updateList();
 
@@ -40,7 +42,9 @@ public class studentActivity extends AppCompatActivity {
 
         SQLiteDatabase requestsDb = this.openOrCreateDatabase("Requests",MODE_PRIVATE,null);
 
-        Cursor c = requestsDb.rawQuery("SELECT * FROM requests", null);
+        requestsDb.execSQL("CREATE TABLE IF NOT EXISTS requests(requestData VARCHAR,date VARCHAR,time VARCHAR,emailID VARCHAR)");
+
+        Cursor c = requestsDb.rawQuery("SELECT * FROM requests WHERE emailID='"+emailID+"'", null);
 
         int requestIndex = c.getColumnIndex("requestData");
         int dateIndex = c.getColumnIndex("date");
@@ -69,6 +73,8 @@ public class studentActivity extends AppCompatActivity {
     public void addRequest(View view){
 
         Intent i9 = new Intent(getApplicationContext(),requestActivity.class);
+
+        i9.putExtra("emailID", emailID);
 
         startActivity(i9);
 
