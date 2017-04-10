@@ -47,6 +47,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="sai.myroom.adminActivity" />
         </activity>
+        <activity android:name=".AssignActivity"></activity>
     </application>
 
 </manifest>

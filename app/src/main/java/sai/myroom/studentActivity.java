@@ -22,6 +22,8 @@ public class studentActivity extends AppCompatActivity {
 
     String password;
 
+    String roomNo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +32,8 @@ public class studentActivity extends AppCompatActivity {
         Intent i = getIntent();
 
         emailID = i.getStringExtra("emailID");
+
+        roomNo = i.getStringExtra("roomNo");
 
         //Log.i("emailID",emailID);
         //Log.i("password",password);
@@ -42,7 +46,7 @@ public class studentActivity extends AppCompatActivity {
 
         SQLiteDatabase requestsDb = this.openOrCreateDatabase("Requests",MODE_PRIVATE,null);
 
-        requestsDb.execSQL("CREATE TABLE IF NOT EXISTS requests(requestData VARCHAR,date VARCHAR,time VARCHAR,emailID VARCHAR)");
+        requestsDb.execSQL("CREATE TABLE IF NOT EXISTS requests(requestData VARCHAR,date VARCHAR,time VARCHAR,emailID VARCHAR,roomNo INTEGER)");
 
         Cursor c = requestsDb.rawQuery("SELECT * FROM requests WHERE emailID='"+emailID+"'", null);
 
@@ -76,7 +80,17 @@ public class studentActivity extends AppCompatActivity {
 
         i9.putExtra("emailID", emailID);
 
+        i9.putExtra("roomNo",roomNo);
+
         startActivity(i9);
+
+    }
+
+    public void signOut(View view){
+
+        Intent intent2 = new Intent(getApplicationContext(),MainActivity.class);
+
+        startActivity(intent2);
 
     }
 }

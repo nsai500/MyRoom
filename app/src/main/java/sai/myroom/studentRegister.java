@@ -94,6 +94,10 @@ public class studentRegister extends AppCompatActivity {
 
             Intent i5 = new Intent(getApplicationContext(),studentActivity.class);
 
+            i5.putExtra("emailID",studentemailID);
+
+            i5.putExtra("roomNo",studentroomNo);
+
             Toast.makeText(getApplicationContext(),"Registered Successfully!",Toast.LENGTH_LONG).show();
 
             startActivity(i5);

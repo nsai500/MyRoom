@@ -42,10 +42,9 @@ public class studentLoginActivity extends AppCompatActivity {
 
                 int emailIDIndex = c.getColumnIndex("emailID");
                 int passwordIndex = c.getColumnIndex("password");
+                int roomIndex = c.getColumnIndex("roomNo");
 
                 c.moveToFirst();
-
-                Log.i("cjebjvrb","vjrbvjrbf");
 
                 while (!c.isAfterLast()) {
 
@@ -57,6 +56,8 @@ public class studentLoginActivity extends AppCompatActivity {
                         Intent i10 = new Intent(getApplicationContext(),studentActivity.class);
 
                         Toast.makeText(getApplicationContext(),"Login Successful!",Toast.LENGTH_LONG).show();
+
+                        i10.putExtra("roomNo",Integer.toString(c.getInt(roomIndex)));
 
                         i10.putExtra("emailID", emailID);
 
